@@ -194,14 +194,13 @@ extension MDProfileViewModel {
         return UInt64((365.2425 * Double(age) * 24 * 60 * 60 * 1000))
     }
     
-    // 1 inch is equal to 2.54 centimeter, so 1 centimeter is equal to 0.3937 inches. Therefore, n centimeters are equal to (n * 0.3937)inches.
-    // 1 foot is equal to 30.48 centimeter, therefore, 1 centimeter is equal to 0.0328 feet. So, n centimeters are equal to (n * 0.0328)feet.
-    
+    //1 centimeter is equal to 0.3937 inches. Therefore, n centimeters are equal to (n * 0.3937)inches.
+    //1 foot is equal to 30.48 centimeter. 1 inch is equal to 2.54 centimeter. Extract the feet from centimeters and calculate the inches for rest
     func feetInchesFromCentimeters(_ centimeters:UInt64)->(feet: Double, inches: Double) {
         
-        let inches = 0.3937 * Double(centimeters)
-        let feet = 0.0328 * Double(centimeters)
-        
+        let feet = floor(Double(centimeters) * 0.0328084)
+        let temp = Double(centimeters) - (feet * 30.48)
+        let inches = temp / 2.54
         return (feet, inches)
     }
     
