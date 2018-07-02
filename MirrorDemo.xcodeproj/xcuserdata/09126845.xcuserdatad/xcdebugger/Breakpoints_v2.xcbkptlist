@@ -57,38 +57,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MirrorDemo/View Model/MDProfileViewModel.swift"
-            timestampString = "552233838.239233"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "parseSaveUserProfile(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MirrorDemo/View+ViewController/MDProfileViewController.swift"
-            timestampString = "552233838.239282"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "MirrorDemo/View Model/MDRegistrationViewModel.swift"
             timestampString = "552233838.2393301"
             startingColumnNumber = "9223372036854775807"
@@ -121,12 +89,12 @@
                   symbolName = "MirrorDemo.MDRegistrationViewModel.registerUser(withCompletionHandler: (MirrorDemo.RegistrationStatus) -&gt; ()) -&gt; ()"
                   moduleName = "MirrorDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/09126845/Veera/Veera/Samples/MirrorDemo/MirrorDemo/View%20Model/MDRegistrationViewModel.swift"
-                  timestampString = "552231422.1725529"
+                  urlString = "file:///Users/09126845/MirrorDemo/MirrorDemo/View%20Model/MDRegistrationViewModel.swift"
+                  timestampString = "552243709.8660721"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
                   offsetFromSymbolStart = "833">
                </Location>
                <Location
@@ -136,12 +104,12 @@
                   symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MirrorDemo.MDRegistrationViewModel.registerUser(withCompletionHandler: (MirrorDemo.RegistrationStatus) -&gt; ()) -&gt; ()"
                   moduleName = "MirrorDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/09126845/Veera/Veera/Samples/MirrorDemo/MirrorDemo/View%20Model/MDRegistrationViewModel.swift"
-                  timestampString = "552231422.1752191"
+                  urlString = "file:///Users/09126845/MirrorDemo/MirrorDemo/View%20Model/MDRegistrationViewModel.swift"
+                  timestampString = "552243709.868415"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
                   offsetFromSymbolStart = "45">
                </Location>
             </Locations>
@@ -160,6 +128,54 @@
             startingLineNumber = "38"
             endingLineNumber = "38"
             landmarkName = "registerUser(withCompletionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MirrorDemo/View+ViewController/MDProfileViewController.swift"
+            timestampString = "552243709.797135"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MirrorDemo/View Model/MDProfileViewModel.swift"
+            timestampString = "552243709.797225"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "centimeterFromFeet(_:andInches:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MirrorDemo/View Model/MDProfileViewModel.swift"
+            timestampString = "552243709.797541"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "feetInchesFromCentimeters(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

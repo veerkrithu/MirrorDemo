@@ -59,8 +59,8 @@ class MDProfileViewController: UIViewController {
                 self.ageTxtField.text = String(profileModel.age)
                 
                 let height = self.profileViewModel.feetInchesFromCentimeters(profileModel.height)
-                self.feetTxtField.text = String(height.feet)
-                self.inchsTxtField.text = String(height.inches)
+                self.feetTxtField.text = String(format: "%.1f", height.feet)
+                self.inchsTxtField.text = String(format: "%.1f", height.inches)
                 
                 profileModel.likeScript ? self.jScriptSwitch.setOn(true, animated: true) : self.jScriptSwitch.setOn(false, animated: true)
             }
@@ -84,65 +84,43 @@ class MDProfileViewController: UIViewController {
     
     @IBAction func userNameTxtFieldDidEndEditing(_ sender: UITextField) {
         
-        if sender.text != "" {
-            profileViewModel.setUserName(sender.text!)
-        }
-        else {
+        if sender.text == "" {
             showAlert(withMessage: "User name can't be empty")
         }
     }
     
     @IBAction func userAgeTxtFieldDidEndEditing(_ sender: UITextField) {
         
-        if sender.text != "" {
-            profileViewModel.setUserAge(UInt(sender.text!)!)
-        }
-        else {
+        if sender.text == "" {
             showAlert(withMessage: "Age can't be empty")
         }
     }
     
     @IBAction func userFeetTxtFieldDidEndEditing(_ sender: UITextField) {
         
-        if sender.text != "" {
-            
-            if UInt(inchsTxtField.text!) != nil {
-                
-                profileViewModel.setUserHeight(inFeet: (Double(feetTxtField.text!)!), andInches: (Double(inchsTxtField.text!)!))
-            }
-            else{
-                
-                profileViewModel.setUserHeight(inFeet: (Double(feetTxtField.text!)!), andInches: 0.0)
-            }
-        }
-        else {
+        if sender.text == "" {
             showAlert(withMessage: "Feet can't be empty")
         }
     }
     
     @IBAction func userInchsTxtFieldDidEndEditing(_ sender: UITextField) {
         
-       if sender.text != "" {
-            
-            if UInt(feetTxtField.text!) != nil {
-                
-                profileViewModel.setUserHeight(inFeet: (Double(feetTxtField.text!)!), andInches: (Double(inchsTxtField.text!)!))
-            }
-            else {
-                profileViewModel.setUserHeight(inFeet: 0.0, andInches: (Double(inchsTxtField.text!)!))
-            }
-        }
-        else {
+        if sender.text == "" {
             showAlert(withMessage: "Inches can't be empty")
         }
     }
-    
     
     @IBAction func likeJScriptValueChanged(_ sender: UISwitch) {
         profileViewModel.setJScriptLike(sender.isOn ? true : false)
     }
     
     @IBAction func saveProfileBtnClicked(_ sender: UIButton) {
+        
+        //Update profile model with user name, age, height, like jscript etc
+        profileViewModel.setUserName(userNameTxtField.text!)
+        profileViewModel.setUserAge(UInt(ageTxtField.text!)!)
+        profileViewModel.setUserHeight(inFeet: (Double(feetTxtField.text!)!), andInches: (Double(inchsTxtField.text!)!))
+        profileViewModel.setJScriptLike(jScriptSwitch.isOn ? true : false)
         
         self.activityIndicator.startAnimating()
         profileViewModel.saveUserProfile { [unowned self] (profileStatus) in

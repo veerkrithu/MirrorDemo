@@ -30,7 +30,7 @@ class MDProfileViewModel {
     }
     
     func setUserAge(_ userAge: UInt) {
-        profileBoxModel.value.age = milliSecondsFromAge(userAge)
+        profileBoxModel.value.age = UInt64(userAge)
     }
     
     func setUserHeight(inFeet feet:Double, andInches inches:Double) {
