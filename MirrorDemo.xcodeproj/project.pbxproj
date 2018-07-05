@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675DA31C20EDC39500FCF535 /* MDNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675DA31B20EDC39500FCF535 /* MDNavigationBar.swift */; };
 		676292DD20E8130B00327B9C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676292DC20E8130B00327B9C /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		676292E020E81C8500327B9C /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676292DF20E81C8500327B9C /* ServiceManager.swift */; };
 		676292E220E83EF100327B9C /* ServiceManager+MirrorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676292E120E83EF100327B9C /* ServiceManager+MirrorDemo.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		675DA31B20EDC39500FCF535 /* MDNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDNavigationBar.swift; sourceTree = "<group>"; };
 		676292DC20E8130B00327B9C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		676292DF20E81C8500327B9C /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		676292E120E83EF100327B9C /* ServiceManager+MirrorDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceManager+MirrorDemo.swift"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				676292E720E85C1500327B9C /* MDProfileViewController.swift */,
 				676A7A5620E9205400C36BE1 /* MDRegistrationViewController.swift */,
 				676A7A6120E9B2E900C36BE1 /* MDHomeViewController.swift */,
+				675DA31B20EDC39500FCF535 /* MDNavigationBar.swift */,
 			);
 			path = "View+ViewController";
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				676292EA20E85D8A00327B9C /* MDRegistrationViewModel.swift in Sources */,
 				676A7A5720E9205400C36BE1 /* MDRegistrationViewController.swift in Sources */,
 				676A7A5B20E94CB400C36BE1 /* ProfileModel.swift in Sources */,
+				675DA31C20EDC39500FCF535 /* MDNavigationBar.swift in Sources */,
 				67C2EEBC20E7E7FC0090753C /* AppDelegate.swift in Sources */,
 				676292E820E85C1500327B9C /* MDProfileViewController.swift in Sources */,
 				67C2EEE120E806540090753C /* MDLoginViewModel.swift in Sources */,

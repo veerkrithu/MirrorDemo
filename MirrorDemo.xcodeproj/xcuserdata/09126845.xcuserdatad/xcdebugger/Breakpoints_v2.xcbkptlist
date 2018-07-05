@@ -90,7 +90,7 @@
                   moduleName = "MirrorDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/09126845/MirrorDemo/MirrorDemo/View%20Model/MDRegistrationViewModel.swift"
-                  timestampString = "552243709.8660721"
+                  timestampString = "552514951.222432"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "34"
@@ -105,7 +105,7 @@
                   moduleName = "MirrorDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/09126845/MirrorDemo/MirrorDemo/View%20Model/MDRegistrationViewModel.swift"
-                  timestampString = "552243709.868415"
+                  timestampString = "552514951.224618"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -128,38 +128,6 @@
             startingLineNumber = "38"
             endingLineNumber = "38"
             landmarkName = "registerUser(withCompletionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MirrorDemo/View+ViewController/MDProfileViewController.swift"
-            timestampString = "552243709.797135"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MirrorDemo/View Model/MDProfileViewModel.swift"
-            timestampString = "552248505.17942"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "centimeterFromFeet(_:andInches:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

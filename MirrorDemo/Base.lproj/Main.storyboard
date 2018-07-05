@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Mirror-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MDLoginViewController" customModule="MirrorDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -143,7 +143,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FVu-PH-8Yw"/>
+                    <navigationItem key="navigationItem" title="Mirror" id="FVu-PH-8Yw"/>
                     <connections>
                         <outlet property="activityIndicator" destination="yYl-Fi-ka1" id="5Jv-yi-0Rc"/>
                         <outlet property="credContainerView" destination="WKh-ls-V4e" id="pwu-wf-qf5"/>
@@ -272,6 +272,7 @@
                                                                     <constraint firstAttribute="height" constant="30" id="iNN-PE-Qrp"/>
                                                                 </constraints>
                                                                 <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                 <connections>
                                                                     <action selector="userPwdTxtFieldDidEndEditing:" destination="uCv-Ee-Dw7" eventType="editingDidEnd" id="EwQ-V5-i8j"/>
@@ -677,9 +678,17 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cYv-1Y-gOs" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lz6-A8-3YS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lz6-A8-3YS" customClass="MDNavigationBar" customModule="MirrorDemo" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20965845599999999" green="0.62104883639999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="1"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

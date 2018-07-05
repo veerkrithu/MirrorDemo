@@ -206,6 +206,6 @@ extension MDProfileViewModel {
     
     func centimeterFromFeet(_ feet:Double, andInches inches:Double)->UInt64 {
         
-        return UInt64((feet * 12 + inches) * 2.54)
+        return UInt64(round((feet * 30.48) + (inches * 2.54)))
     }
 }
