@@ -59,8 +59,8 @@ class MDProfileViewController: UIViewController {
                 self.ageTxtField.text = String(profileModel.age)
                 
                 let height = self.profileViewModel.feetInchesFromCentimeters(profileModel.height)
-                self.feetTxtField.text = String(format: "%.1f", height.feet)
-                self.inchsTxtField.text = String(format: "%.1f", height.inches)
+                self.feetTxtField.text = String(format: "%.0f", height.feet)
+                self.inchsTxtField.text = String(format: "%.0f", height.inches)
                 
                 profileModel.likeScript ? self.jScriptSwitch.setOn(true, animated: true) : self.jScriptSwitch.setOn(false, animated: true)
             }

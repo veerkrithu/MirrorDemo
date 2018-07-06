@@ -90,7 +90,7 @@
                   moduleName = "MirrorDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/09126845/MirrorDemo/MirrorDemo/View%20Model/MDRegistrationViewModel.swift"
-                  timestampString = "552514951.222432"
+                  timestampString = "552542525.227228"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "34"
@@ -105,7 +105,7 @@
                   moduleName = "MirrorDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/09126845/MirrorDemo/MirrorDemo/View%20Model/MDRegistrationViewModel.swift"
-                  timestampString = "552514951.224618"
+                  timestampString = "552542525.229133"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -128,6 +128,22 @@
             startingLineNumber = "38"
             endingLineNumber = "38"
             landmarkName = "registerUser(withCompletionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MirrorDemoTests/MirrorDemoTests.swift"
+            timestampString = "552541116.476722"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "testFeetInchesFromCentimeter()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
