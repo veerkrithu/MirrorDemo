@@ -15,13 +15,20 @@ class MDLoginViewController: UIViewController {
     @IBOutlet weak var usrNameTxtFld: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var loginStackView: UIStackView!
     
     private let loginViewModel = MDLoginViewModel()
+    private var isStackViewLifted = false
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         self.setupUIFields()
+
+        NotificationCenter.default.addObserver(self, selector:  #selector(keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector:  #selector(keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -90,6 +97,21 @@ extension MDLoginViewController: UITextFieldDelegate
         textField.resignFirstResponder()
         return true
     }
+    
+    @objc func keyboardWillShow(sender: Notification) {
+        
+        if(!isStackViewLifted)
+        {
+            loginStackView.frame.origin.y = loginStackView.frame.origin.y - 40
+            isStackViewLifted = true
+        }
+    }
+    
+    @objc func keyboardWillHide(sender: Notification) {
+        isStackViewLifted = false
+        loginStackView.frame.origin.y = loginStackView.frame.origin.y + 40
+    }
+    
 }
 
 extension MDLoginViewController

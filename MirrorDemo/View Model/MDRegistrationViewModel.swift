@@ -31,7 +31,7 @@ class MDRegistrationViewModel {
         
         let httpBody = ["username" : userModel.userName, "password" : userModel.password] as [String : Any]
         
-        serviceManager.sendRequest(withBody: httpBody, theHeader: ["Content-Type" : "application/json"]) { [unowned self](data, error) in
+        serviceManager.sendRequest(withBody: httpBody, theHeader: ["Content-Type" : "application/json"]) { [weak self](data, error) in
             
             if(error == nil) {
                 
@@ -40,7 +40,7 @@ class MDRegistrationViewModel {
                     return
                 }
                 
-                handler(self.parseUserRegistration(responseData))
+                handler((self?.parseUserRegistration(responseData))!)
             }
         }
     }

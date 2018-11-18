@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainAccess
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /*let keyChain = Keychain(service: "com.Self.MirrorDemo")
+        
+        if keyChain["access_token"] != "" {
+            
+            let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+            let homeNavigationController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController")
+            
+            self.window?.rootViewController = homeNavigationController
+        }*/
+        
         return true
     }
 
